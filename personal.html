@@ -7,13 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicola Folchi's Portfolio</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
         integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- Bulma Version 0.9.4-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/hero.css">
   <link rel="stylesheet" type="text/css" href="./css/personal.css">
   <link rel="stylesheet" type="text/css" href="./css/starryNight.css">
   <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
@@ -23,7 +22,7 @@
   <div id="root"></div>
 
   <!-- Navigation bar -->
-  <nav class="navbar is-link is-fixed-top">
+  <nav class="navbar is-dark is-fixed-top">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -63,7 +62,7 @@
   </nav>
 
   <!-- Header -->
-  <section class="hero is-link is-fullheight is-fullheight-with-navbar">
+  <section class="hero is-dark is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">Hello! I am
         <h1 class="title is-1">
@@ -171,7 +170,7 @@
   <section class="section" id="resume" style="padding: 0.5em 1rem;">
     <div class="section-heading" style="margin-bottom: 2em;">
       <h3 class="title is-2">Resume</h3>
-      <a href="./NicolaFolchi-Resume.pdf" download="NicolaFolchi-Resume" class="button is-link is-medium">
+      <a href="./NicolaFolchi-Resume.pdf" download="NicolaFolchi-Resume" class="button is-shady is-medium">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
@@ -334,16 +333,16 @@
         <div class="column is-6 is-offset-3">
           <div class="box">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label">Your Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input id="emailSenderName" class="input" type="text" placeholder="Text input">
               </div>
             </div>
 
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label">Subject</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email input" value="">
+                <input id="emailSubject" class="input" type="email" placeholder="Email Subject" value="">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -353,13 +352,13 @@
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea id="emailBody" class="textarea" placeholder="Textarea"></textarea>
               </div>
             </div>
 
             <div class="field is-grouped has-text-centered">
               <div class="control">
-                <button class="button is-link is-large"><span class="icon">
+                <button id="sendEmailButton" class="button is-dark is-large"><span class="icon">
                     <i class="fas fa-envelope"></i>
                   </span>
                   <span>Submit</span></button>
@@ -575,14 +574,30 @@
   </div>
   <!-- end tiny modal card -->
 
+
+  <footer class="footer" style="padding: 1rem 1.5rem 1rem;">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/NicolaFolchi" target="_blank" style="color:#363636;">
+                    <i class="fab fa-github-square fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nicolafolchi/" target="_blank" style="color:#363636;">
+                    <i class="fab fa-linkedin-square fa-2x"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
   <!-- starry night -->
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
-  <script type="text/javascript" src="./js/starryNight.js"></script>
   <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/starryNight.js"></script>
   <script src="./js/wild.js"></script>
 </body>
 

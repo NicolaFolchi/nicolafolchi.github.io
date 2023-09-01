@@ -102,4 +102,17 @@ class StarrySky extends React.Component {
     React.createElement(StarrySky, null),
     document.getElementById("root")
   );
-  
+
+//   function mail() {
+//     var rk =
+//     document.getElementById("button").getAttribute("onClick");
+//     document.getElementById("gfg").innerHTML = rk;
+// }
+$(document).ready(function(){
+  $('#sendEmailButton').on('click',function(){
+    let name = document.getElementById("emailSenderName").value;
+    let subject = document.getElementById("emailSubject").value;
+    let body = document.getElementById("emailBody").value;
+     window.location.href = `mailto:nicolafolchig@gmail.com?subject=${subject} - ${name}&body=${body}`; 
+  });
+});
