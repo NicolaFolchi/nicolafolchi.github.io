@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicola Folchi's Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.9.4-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/personal.css">
+  <link rel="stylesheet" type="text/css" href="./css/starryNight.css">
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Navigation bar -->
+  <nav class="navbar is-dark is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-dark is-fullheight is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">Hello! I am
+        <h1 class="title is-1">
+          Nicola Folchi
+        </h1>
+        <h2 class="subtitle is-3">
+          Software Engineer
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading" style="margin-bottom: 2em;">
+      <h3 class="title is-2">About Me</h3>
+      <!-- <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4> -->
+      <div class="container">
+        <!-- <p>Hello! I'm an experienced Software Engineer with a proven track record in driving revenue and operational
+          efficiency. My journey includes revenue-boosting feature implementation and substantial cost reduction through
+          process automation at Citigroup. I have also excelled as a full-stack developer at the University of North
+          Carolina at Chapel Hill, where I enhanced operations and crafted impactful web solutions for the Biophysics
+          and Biochemistry departments. Projects like Melophyle and the MiniJava Compiler highlight my expertise in
+          Java, Python, and more. Fluent in English, Spanish, and with intermediate Italian, I bring both technical
+          prowess and linguistic versatility. Beyond my professional accomplishments, I'm an avid pool player, a movie
+          enthusiast, and a passionate traveler.
+        </p> -->
+        <p>Hello!<br> I'm an experienced Software Engineer with a proven track record in driving revenue and operational
+          efficiency. I currently work at Citigroup, where I implement revenue-boosting features and have achieved
+          substantial cost reductions through process automation.
+          <br><br>
+          My journey has taken me from my home country of Venezuela, where I was born and raised, to the United States
+          approximately seven years ago. Early on in my career, I harbored a fervent desire to expand my knowledge in
+          computer science, a field not readily accessible in my homeland. Upon arriving in the U.S., I discovered the
+          exciting realm of computer science and began delving into various domains, including full-stack development,
+          game development, and mobile development. These pursuits not only served as a source of entertainment but also
+          offered valuable learning experiences throughout the journey.
+          <br><br>
+          My educational background also includes a role as a Full-Stack developer at the University of North Carolina
+          at Chapel Hill. Here, I made significant contributions by enhancing operations and crafting impactful web
+          solutions for esteemed departments like the Biophysics and Biochemistry departments. Furthermore, notable
+          projects such as Melophyle and the MiniJava Compiler highlight my expertise in languages like Java, Python,
+          and more.
+          <br><br>
+          With fluency in English and Spanish, as well as intermediate proficiency in Italian, I bring both technical
+          prowess and linguistic versatility. Beyond my professional accomplishments, I'm an avid pool player, a movie
+          enthusiast, and a passionate traveler.
+        </p>
+      </div>
+    </div>
+
+    <!-- <div class='column is-one-quarter'> -->
+    <div class='equal-height'>
+      <div class='is-flex is-horizontal-center'>
+        <figure class='image'><img src="./images/NicolaPicture.jpeg" alt="Profile Picture"></figure>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- <div class="columns has-same-height is-gapless">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">Profile</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>+1 (786) 622-5668</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>nicolafolchig@gmail.com</td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="buttons has-addons is-centered">
+              <a href="https://github.com/NicolaFolchi" target="_blank" class="button is-link">Github</a>
+              <a href="https://www.linkedin.com/in/nicolafolchi/" target="_blank" class="button is-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="./images/NicolaPicture.jpeg" alt="Profile Picture">
+            </figure>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Resume -->
+  <section class="section" id="resume" style="padding: 0.5em 1rem;">
+    <div class="section-heading" style="margin-bottom: 2em;">
+      <h3 class="title is-2">Resume</h3>
+      <a href="./NicolaFolchi-Resume.pdf" download="NicolaFolchi-Resume" class="button is-shady is-medium">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Download My Resume</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio"> <!-- hover to see a description -->
+    <div class="container">
+      <div class="section-heading" style="margin-bottom: 2em;">
+        <h3 class="title is-2">Personal Projects</h3>
+        <!-- <h4 class="subtitle is-5">My latest personal projects</h4> -->
+      </div>
+      <!-- <br> -->
+
+      <div class="container portfolio-container">
+        <div class="columns">
+          <div class="column is-4"> <!-- first column -->
+            <!-- Melophyle -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Melophyle <small></small></span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Express.js</span>
+                    <span class="tag is-danger">MongoDB</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./images/Melophile_Logo.png" alt="Melophyle Logo">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item modal-button" data-target="melophyle-modal">Info</a>
+                <a href="https://www.melophyle.com" target="_blank" class="card-footer-item">Preview</a>
+                <!-- <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">Source
+                  Code</a> -->
+              </footer>
+            </div>
+            <!-- 2048 -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>2048</span>
+                  <span class="is-pulled-right">
+                    <!-- <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                        <span class="tag is-default">v0.7.2</span>
+                      </a> -->
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./images/2048.png" alt="2048 Game">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item modal-button" data-target="2048js-modal">Info</a>
+                <a href="https://nicolafolchi.github.io/2048js/" target="_blank" class="card-footer-item">Preview</a>
+                <a href="https://github.com/NicolaFolchi/2048js" target="_blank" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-4"><!-- second column -->
+            <!-- MiniJava Compiler -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>MiniJava Compiler</span>
+                  <span class="is-pulled-right">
+                    <!-- <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a> -->
+                    <span class="tag is-primary">Java</span>
+                    <span class="tag is-primary">JSP</span>
+                    <span class="tag is-warning">Apache Tomcat</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./images/minijava.png" alt="MiniJava Compiler">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item modal-button" data-target="minijava-modal">Info</a>
+                <a href="" class="card-footer-item">Preview</a>
+                <a href="https://github.com/NicolaFolchi/miniJava-compiler" target="_blank"
+                  class="card-footer-item">Source Code</a>
+              </footer>
+            </div>
+            <!-- Parlario -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Parlario</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./images/Parlario-icon.jpeg" alt="Parlario icon">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <!-- <a href="templates/landing.html" class="card-footer-item">Preview</a> -->
+                <a class="card-footer-item modal-button" data-target="parlario-modal">Info</a>
+                <a href="https://github.com/NicolaFolchi/Parlario" target="_blank" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-4"> <!-- Third column -->
+            <!-- Stodius -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Stodius</span>
+                  <span class="is-pulled-right">
+                    <span class="tag is-default">Express.js</span>
+                    <span class="tag is-default">Desktop</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="./images/stodius-team.png" alt="Stodius">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a class="card-footer-item modal-button" data-target="stodius-modal">Info</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading" style="margin-bottom: 2em;">
+        <h3 class="title is-2">Contact</h3>
+        <h4 class="subtitle is-5">Let's get in touch</h4>
+      </div>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Your Name</label>
+              <div class="control">
+                <input id="emailSenderName" class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Subject</label>
+              <div class="control has-icons-left">
+                <input id="emailSubject" class="input" type="email" placeholder="Email Subject" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea id="emailBody" class="textarea" placeholder="Textarea"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button id="sendEmailButton" class="button is-dark is-large"><span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  ===============
+  HERE BE MODALS
+  ===============  -->
+  <!-- 3dFlipVertical card tiny -->
+  <div id="modal-card" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+              src="https://images.unsplash.com/photo-1515555230216-82228b88ea98?auto=format&amp;fit=crop&amp;w=900&amp;q=60"
+              alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="https://res.cloudinary.com/ameo/image/upload/v1639144778/typocat_svbspx.png" alt="avatar">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Jane Doe</p>
+              <p class="subtitle is-6">@jane_doe</p>
+            </div>
+          </div>
+          <div class="content">
+            Laum Ipsum apricot peaches venison bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it
+            can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the
+            pit mummah Yessah, mumma
+            nogoth phlegeth stell'bsna orr'e ph'Hastur gnaiih throd, uln ya lw'nafh mg nar'luh li'hee wgah'n, sgn'wahl
+            mg nakadishtu chlirgh hupadgh tharanak h'gnaiih.
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br>
+            <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  <!-- parlario card tiny [butterfly] -->
+  <div id="parlario-modal" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/Parlario-icon.jpeg" alt="Parlario">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Parlario</p>
+            </div>
+          </div>
+          <div class="content">
+            A dynamic web application that empowers users to engage in conversations with like-minded individuals who
+            share a common interest. Within this platform, users have the capability to establish their own chat rooms,
+            accessible to anyone who wishes to participate.
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  <div id="2048js-modal" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/2048.png" alt="2048">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">2048</p>
+            </div>
+          </div>
+          <div class="content">
+            My personalized take on the classic 2048 game, a captivating single-player sliding tile puzzle video game.
+            The goal in this game is to skillfully maneuver numbered tiles on a grid, strategically merging them until
+            you successfully achieve the coveted 2048 tile.
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  <div id="minijava-modal" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/minijava.png" alt="MiniJava">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">MiniJava</p>
+            </div>
+          </div>
+          <div class="content">
+            This Java program serves as a miniJava compiler, specializing in processing a subset of Java. Within its
+            functionality, the compiler executes tasks ranging from syntactic analysis and abstract syntax tree
+            construction to identification checking, type checking, and ultimately code generation, all tailored to
+            handle a wide array of miniJava source code inputs.
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  <div id="melophyle-modal" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/Melophile_Logo.png" alt="Melophile_Logo">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Melophyle</p>
+            </div>
+          </div>
+          <div class="content">
+            A dynamic platform designed to serve as a hub for music enthusiasts to explore, share, evaluate, and discuss
+            their favorite tunes. This comprehensive space empowers users to not only discover their preferred artists
+            but also to connect with like-minded individuals in the music realm through the creation of posts, comments,
+            and follows.
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  <!-- 3dFlipVertical card tiny [butterfly] -->
+  <div id="stodius-modal" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./images/stodius-team.png" alt="Stodius">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Stodius</p>
+            </div>
+          </div>
+          <div class="content">
+            A dedicated platform designed to enhance the academic experience at the University of North Carolina at
+            Chapel Hill by seamlessly connecting students to form study groups tailored to specific courses. Through our
+            platform, Users will be thoughtfully matched with fellow students who align closely with their study group
+            preferences, encompassing factors such as group size, learning objectives, study frequency, and more. This
+            tailored approach fosters a conducive environment for networking and collaborative studying with classmates,
+            all centered around a specific course.
+            <br>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+  <footer class="footer" style="padding: 1rem 1.5rem 1rem;">
+    <div class="container">
+        <div class="content has-text-centered">
+            <p>
+                <a href="https://github.com/NicolaFolchi" target="_blank" style="color:#363636;">
+                    <i class="fab fa-github-square fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nicolafolchi/" target="_blank" style="color:#363636;">
+                    <i class="fab fa-linkedin-square fa-2x"></i>
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+  <!-- starry night -->
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+  <script type="text/javascript" src="./js/starryNight.js"></script>
+  <script src="./js/wild.js"></script>
+</body>
+
+</html>
