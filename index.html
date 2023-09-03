@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicola Folchi's Portfolio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+    integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- Bulma Version 0.9.4-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -41,7 +43,7 @@
         </a>
         <a class="navbar-item" href="#resume">
           <span class="icon">
-            <i class="fas fa-th-list"></i>
+            <i class="fa-regular fa-file"></i>
           </span>
           <span>Resume</span>
         </a>
@@ -167,7 +169,7 @@
   </section>
 
   <!-- Resume -->
-  <section class="section" id="resume" style="padding: 0.5em 1rem;">
+  <section class="section" id="resume" style="padding: 2em 1rem;">
     <div class="section-heading" style="margin-bottom: 2em;">
       <h3 class="title is-2">Resume</h3>
       <a href="./NicolaFolchi-Resume.pdf" download="NicolaFolchi-Resume" class="button is-shady is-medium">
@@ -196,7 +198,7 @@
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Melophyle <small></small></span>
-                  <span class="is-pulled-right">
+                  <span class="is-pulled-right" style="margin-left: 2em;">
                     <span class="tag is-default">Express.js</span>
                     <span class="tag is-danger">MongoDB</span>
                   </span>
@@ -219,10 +221,7 @@
               <header class="card-header">
                 <p class="card-header-title">
                   <span>2048</span>
-                  <span class="is-pulled-right">
-                    <!-- <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                        <span class="tag is-default">v0.7.2</span>
-                      </a> -->
+                  <span class="is-pulled-right" style="margin-left: 2em;">
                     <span class="tag is-default">Desktop</span>
                     <span class="tag is-default">Mobile</span>
                   </span>
@@ -247,10 +246,7 @@
               <header class="card-header">
                 <p class="card-header-title">
                   <span>MiniJava Compiler</span>
-                  <span class="is-pulled-right">
-                    <!-- <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                      <span class="tag is-default">v0.7.2</span>
-                    </a> -->
+                  <span class="is-pulled-right" style="margin-left: 2em;">
                     <span class="tag is-primary">Java</span>
                     <span class="tag is-primary">JSP</span>
                     <span class="tag is-warning">Apache Tomcat</span>
@@ -274,7 +270,7 @@
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Parlario</span>
-                  <span class="is-pulled-right">
+                  <span class="is-pulled-right" style="margin-left: 2em;">
                     <span class="tag is-default">Desktop</span>
                     <span class="tag is-default">Mobile</span>
                   </span>
@@ -299,7 +295,7 @@
               <header class="card-header">
                 <p class="card-header-title">
                   <span>Stodius</span>
-                  <span class="is-pulled-right">
+                  <span class="is-pulled-right" style="margin-left: 2em;">
                     <span class="tag is-default">Express.js</span>
                     <span class="tag is-default">Desktop</span>
                   </span>
@@ -334,15 +330,18 @@
           <div class="box">
             <div class="field">
               <label class="label">Your Name</label>
-              <div class="control">
-                <input id="emailSenderName" class="input" type="text" placeholder="Text input">
+              <div class="control has-icons-left">
+                <input id="emailSenderName" class="input" type="text" placeholder="Full Name">
+                <span class="icon is-small is-left">
+                  <i class="fa-solid fa-user"></i>
+                </span>
               </div>
             </div>
 
             <div class="field">
               <label class="label">Subject</label>
               <div class="control has-icons-left">
-                <input id="emailSubject" class="input" type="email" placeholder="Email Subject" value="">
+                <input id="emailSubject" class="input" type="text" placeholder="Email Subject">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -352,7 +351,7 @@
             <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea id="emailBody" class="textarea" placeholder="Textarea"></textarea>
+                <textarea id="emailBody" class="textarea" placeholder="Message"></textarea>
               </div>
             </div>
 
@@ -577,22 +576,21 @@
 
   <footer class="footer" style="padding: 1rem 1.5rem 1rem;">
     <div class="container">
-        <div class="content has-text-centered">
-            <p>
-                <a href="https://github.com/NicolaFolchi" target="_blank" style="color:#363636;">
-                    <i class="fab fa-github-square fa-2x"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/nicolafolchi/" target="_blank" style="color:#363636;">
-                    <i class="fab fa-linkedin-square fa-2x"></i>
-                </a>
-            </p>
-        </div>
+      <div class="content has-text-centered">
+        <p>
+          <a href="https://github.com/NicolaFolchi" target="_blank" style="color:#363636;">
+            <i class="fa-brands fa-github-square fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nicolafolchi/" target="_blank" style="color:#363636;">
+            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+          </a>
+        </p>
+      </div>
     </div>
-</footer>
+  </footer>
 
-  <!-- starry night -->
   <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
-  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.development.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
